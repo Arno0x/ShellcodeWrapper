@@ -43,8 +43,8 @@ root@kali:~# ./shellcode_encoder.py -cpp -cs -py shellcode.raw thisismykey xor
 This will generate C#, C++ and Python code file in the `result` folder. Those files are ready to use/compile.
 
 Eventually:
-1. For the C++ wrapper, compile the C++ code file into a Windows executable:
-	You can create a new VisualStudio project for **Win32 console application** and use the C++ code provided as the main file. Any other method of compilation will require slight adjustment of the C++ code (headers mostly).
+
+1. For the C++ wrapper, compile the C++ code file into a Windows executable: you can create a new VisualStudio project for **Win32 console application** and use the C++ code provided as the main file. Any other method of compilation will require slight adjustment of the C++ code (headers mostly).
 2. For the C# wrapper, compile the C# code file into a Windows executable:
 	`C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /unsafe /out:multibyteEncodeShellcode.exe multibyteEncodeShellcode.cs`
 3. For the Python wrapper, just run it as a python script, or use PyInstaller to make it a Windows standalone executable
